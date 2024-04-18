@@ -1,5 +1,5 @@
 import React from "react";
-import { Routes, BrowserRouter, Route } from "react-router-dom";
+import { Routes, BrowserRouter, Route, HashRouter } from "react-router-dom";
 
 import StoreDashboard from "./Components/Panels/Store/Dashboard/Dashboard";
 import AddMaterials from "./Components/Panels/Store/Materials(AE)/AddMaterials";
@@ -31,7 +31,7 @@ import Profile from "./Components/User/Profile/Profile";
 export default function Main() {
   return (
     <>
-      <BrowserRouter>
+      <HashRouter>
         <Routes>
           <Route path="/" element={<Home></Home>}></Route>
           <Route path="/about" element={<About></About>}></Route>
@@ -109,13 +109,8 @@ export default function Main() {
             element={<GenerateInvoice></GenerateInvoice>}
           ></Route>
           <Route path="*" element={<NotFound404></NotFound404>}></Route>
-          {/* <Route
-            path="/store_transactions"
-            element={<StoreTransactions></StoreTransactions>}
-          ></Route>
-          <Route path="/designs" element={<AllDesigns></AllDesigns>}></Route> */}
         </Routes>
-      </BrowserRouter>
+      </HashRouter>
     </>
   );
 }
