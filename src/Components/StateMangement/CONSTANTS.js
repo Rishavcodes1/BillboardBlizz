@@ -1,0 +1,2 @@
+export const COMPLETED_ORDER = "COMPLETED_ORDER";
+export const PENDING_ORDER = "PENDING_ORDER";

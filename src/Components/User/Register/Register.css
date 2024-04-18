@@ -1,0 +1,143 @@
+.register-container {
+    height: 100vh;
+    overflow: hidden;
+}
+
+.register-container input,
+.register-container textarea {
+    outline: none;
+    padding: .3rem .5rem;
+    border: 1px solid gray;
+    border-radius: 2px;
+    width: 100%;
+}
+
+textarea {
+    resize: none;
+}
+
+.register-container> :nth-child(1) {
+    flex: 3;
+}
+
+.register-container> :nth-child(2) {
+    flex: 2;
+}
+
+.register-right-content .register-form-container {
+    background-color: #fff;
+    padding: 1rem;
+    border-radius: .3rem;
+    width: 90%;
+    box-shadow: 3px 10px 20px rgb(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+
+.register-form-container> :nth-child(3),
+.register-form-container> :nth-child(4) {
+    display: flex;
+    gap: .5rem;
+}
+
+.register-form-container> :nth-child(3)>div,
+.register-form-container> :nth-child(4)>div {
+    flex: 1;
+}
+
+
+.register-right-content .register-form-container>div a:hover {
+    text-decoration: underline;
+}
+
+.register-left-content {
+    position: relative;
+}
+
+.register-left-image {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity 2s;
+}
+
+#register-left-image-active {
+    opacity: 1 !important;
+}
+
+.register-left-content>img {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+}
+
+.register-container .register-btn {
+    background-color: #0d6efd;
+    color: #fff;
+    width: 100%;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+
+}
+
+.register-container .register-btn:hover {
+    background-color: #035fe8;
+
+}
+
+@media only screen and (max-width:1000px) {
+    .register-left-content {
+        display: none;
+    }
+
+    .register-container {
+        height: 100vh;
+        padding-bottom: 0 !important;
+    }
+
+    .register-right-content {
+        background: linear-gradient(60deg, #0d6dfd5c, #040c1766), url("../../../Assets/billboard images/billboard-img-1.jpg");
+        height: 100%;
+        width: 100%;
+        background-size: cover;
+    }
+
+    .register-form-container {
+        width: 70% !important;
+    }
+}
+
+@media only screen and (max-width:700px) {
+
+    .register-right-content {
+        background: linear-gradient(60deg, #0d6dfd, #24508d);
+
+    }
+
+    .register-form-container {
+        width: 90% !important;
+    }
+
+}
+
+@media only screen and (max-width:480px) {
+
+    .register-container {
+        overflow-x: scroll !important;
+        height: auto;
+    }
+
+
+    .register-form-container> :nth-child(3),
+    .register-form-container> :nth-child(4) {
+        flex-direction: column;
+    }
+
+}

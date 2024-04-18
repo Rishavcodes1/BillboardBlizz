@@ -1,0 +1,46 @@
+.why-us-container {
+    background-color: #204D50;
+    color: white;
+    border-radius: .3rem;
+    overflow: hidden;
+}
+
+.why-us-container>div {
+    flex: 1;
+
+}
+
+.why-us-container .why-us-right-content img {
+    width: 100%;
+    height: 100%;
+}
+
+
+@media only screen and (max-width:1000px) {
+    
+    .why-us-container .why-us-right-content {
+        display: none;
+    }
+
+    .why-us-container .why-us-left-content {
+        background: linear-gradient(rgba(0, 0, 0, 0.639), rgba(0, 0, 0, 0.742)), url("https://thumbs.dreamstime.com/b/billboards-advertising-signs-modern-buildings-capital-city-future-urbanist-science-fiction-advertising-billboards-276471027.jpg");
+        background-size: cover;
+    }
+
+    .why-us-container .why-us-left-content > div{
+        flex-direction: row !important;
+    }
+    .why-us-container .why-us-left-content > div >div{
+        background-color: #eaeaea;
+        color: black;
+        padding: .5rem;
+        border-radius: .3rem;
+        flex: 1;
+    }
+}
+@media only screen and (max-width:770px) {
+    
+    .why-us-container .why-us-left-content > div{
+        flex-direction: column !important;
+    }
+} 

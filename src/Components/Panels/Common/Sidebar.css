@@ -1,0 +1,100 @@
+.sidebar {
+    color: #B7C0C0;
+    background-color: #263544;
+    position: fixed;
+    width: 300px;
+    padding: .5rem 1rem;
+    height: 100vh;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    transition: all .7s;
+    box-shadow: 3px 3px 20px rgba(0, 0, 0, 0.2);
+    z-index: 50;
+}
+
+.sidebar>ul {
+    flex: 8;
+    overflow-y: auto;
+}
+
+.sidebar>ul::-webkit-scrollbar {
+    width: 5px;
+}
+
+.sidebar>ul::-webkit-scrollbar-thumb {
+    background-color: #B7C0C0;
+    border-radius: 5rem;
+}
+
+
+
+.sidebar-branding-container {
+    height: 40px;
+}
+
+.sidebar-branding-container i {
+    cursor: pointer;
+}
+
+.sidebar-links-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.sidebar-links-container li {
+    list-style: none;
+    width: 97%;
+}
+
+.sidebar-links-container li a>:nth-child(1),
+.sidebar-links-container li span>:nth-child(1) {
+    width: 30px;
+}
+
+.sidebar a {
+    color: #B7C0C0;
+}
+
+.sidebar-links-container li a,
+.sidebar> :nth-last-child(1) li a,
+.sidebar-links-container li>span {
+
+    display: flex;
+    align-items: center;
+    padding: .5rem;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.sidebar-links-container li a:hover,
+.sidebar> :nth-last-child(1) li a:hover {
+    color: #fff;
+}
+
+.sidebar-links-container-inner li {
+    width: 95%;
+}
+
+.sidebar-link-active {
+    background-color: #fff !important;
+    color: #000 !important;
+
+}
+
+.sidebar>:nth-last-child(1) {
+    display: flex;
+    flex-direction: column;
+}
+
+.sidebar>:nth-last-child(1) li a {
+    display: flex;
+    gap: .5rem;
+}
+
+
+@media only screen and (max-width:1000px) {
+    .sidebar {
+        transform: translateX(-300px);
+    }
+}

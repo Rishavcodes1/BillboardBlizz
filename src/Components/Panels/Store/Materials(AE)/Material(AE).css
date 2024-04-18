@@ -1,0 +1,49 @@
+.add-materials-form-container {
+    width: 75%;
+    margin: 0 auto;
+}
+
+
+
+.add-materials-form-container a:hover {
+    text-decoration: underline;
+}
+
+.add-materials-form-container .field-container {
+    display: flex;
+    gap: 1rem;
+    background-color: #e9e9e9;
+    padding: 1rem;
+    border-radius: 3px;
+    align-items: center;
+    overflow: hidden;
+}
+
+.field-container>span {
+    background-color: #fff;
+    padding: .7rem;
+    position: relative;
+    right: 1rem;
+    box-shadow: 3px 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+
+@media only screen and (max-width:1170px) {
+    .add-materials-form-container {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width:600px) {
+    .add-materials-form-container .field-container {
+        flex-direction: column;
+    }
+
+    .add-materials-form-container .field-container>div {
+        width: 100%;
+    }
+
+    .add-materials-form-container .field-container>span {
+        margin-right: auto;
+    }
+}

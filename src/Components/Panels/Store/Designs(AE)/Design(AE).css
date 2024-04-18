@@ -1,0 +1,28 @@
+
+.add-designs-form-container .field-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    background-color: #e9e9e9;
+    padding: 1rem;
+    border-radius: 3px;
+}
+
+.add-designs-container .add-design-btn {
+    margin-left: auto;
+    min-width: 50px;
+    min-height: 40px;
+
+}
+
+@media only screen and (max-width:1170px) {
+    .add-designs-form-container{
+        width: 100% !important;
+    }
+}
+
+@media only screen and (max-width:670px) {
+    .add-designs-form-container .field-container{
+        grid-template-columns: 1fr;
+    }
+}

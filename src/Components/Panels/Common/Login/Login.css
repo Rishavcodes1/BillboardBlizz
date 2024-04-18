@@ -1,0 +1,176 @@
+.panel-login-outer-div {
+    background-color: #dddddd;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+}
+
+.panel-login-container {
+    background-color: #263544;
+    display: flex;
+    margin: auto;
+    border-radius: .2rem;
+    overflow: hidden;
+    box-shadow: 3px 10px 30px rgba(0, 0, 0, 0.2);
+    width: 70%;
+    min-width: 800px;
+}
+
+.panel-login-container>div {
+    flex: 1;
+}
+
+.panel-login-left-content {
+    background-color: #F7F6F6;
+    padding: 1rem;
+    color: #fff;
+    display: flex;
+}
+
+.panel-login-left-content>img {
+    width: 100%;
+    object-fit: contain;
+}
+
+.panel-login-right-content {
+
+    padding: 1rem 2rem;
+    display: flex;
+    color: #fff;
+    flex-direction: column;
+    position: relative;
+}
+
+.panel-login-right-content>h2 {
+    padding: 1rem 0;
+}
+
+.panel-login-form-container {
+    margin: 4rem auto;
+    width: 100%;
+}
+
+.panel-login-form-container>div {
+    margin: .5rem 0;
+}
+
+.panel-login-form-container>:nth-child(1)>h4 {
+    line-height: .7;
+}
+
+.panel-login-form-container>:nth-child(1)>span {
+    color: #e8e8e8;
+
+}
+
+.panel-login-form-container a {
+    color: #fff;
+}
+
+.panel-login-form-container a:hover {
+    text-decoration: underline;
+}
+
+.panel-login-form-container .panel-login-btn {
+    width: 200px;
+    color: #263544;
+    font-size: 18px;
+    font-weight: 600;
+    margin-top: 2rem;
+    background-color: #F7F6F6;
+}
+
+.panel-login-right-content>:nth-child(1)>h3 {
+    padding: 1rem;
+    border-radius: 2px;
+    background-color: #263544;
+    color: #F7F6F6;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    display: none;
+}
+
+.panel-login-btn .my-spinner {
+    border: 3px solid;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    border-top-color: transparent;
+    animation: spin 2s linear infinite;
+}
+
+.panel-login-right-content .alert-danger{
+    position: absolute;
+    transform: translateY(-5rem);
+    width: 100%;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@media only screen and (max-width:820px) {
+    .panel-login-left-content {
+        display: none;
+    }
+
+    .panel-login-outer-div {
+        background: linear-gradient(45deg, #122646b9, #071f43bc, #001028c1);
+        background-position: center;
+        background-size: cover;
+    }
+
+
+    .panel-login-container {
+        background-color: #fff;
+        width: 50%;
+        min-width: 350px;
+    }
+
+    .panel-login-right-content {
+        color: #263544;
+    }
+
+    .panel-login-form-container input {
+        background-color: #fff;
+    }
+
+    .panel-login-form-container>:nth-child(1)>span {
+        color: #555555;
+    }
+
+    .panel-login-form-container a {
+        color: #0d6efd;
+    }
+
+    .panel-login-right-content>:nth-child(1)>h3 {
+        display: inline;
+    }
+
+    .panel-login-form-container {
+        margin: 1rem auto;
+    }
+
+    .panel-login-right-content>h2 {
+        margin-top: 2rem;
+    }
+
+    .panel-login-form-container .panel-login-btn {
+        background-color: #263544;
+        width: 100%;
+        color: #F7F6F6;
+    }
+}
+
+@media only screen and (max-width:360px) {
+    .panel-login-container {
+        min-width: 200px;
+        width: 90%;
+    }
+}

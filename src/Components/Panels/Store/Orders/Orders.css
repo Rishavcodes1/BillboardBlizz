@@ -1,0 +1,11 @@
+.description-container {
+    width: 20%;
+}
+
+.ordered-on-container{
+    width: 10%;
+}
+
+.btn-outline-danger {
+    width: fit-content;
+}

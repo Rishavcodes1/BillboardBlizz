@@ -1,0 +1,128 @@
+.contact-us-container {
+    background: linear-gradient(135deg, #198754, #0d6efd, #0043a7);
+}
+
+.contact-us-left-content {
+    flex-direction: column;
+    justify-content: center;
+}
+
+.contact-us-container .container {
+    height: 100%;
+}
+
+.contact-us-container .container> :nth-child(1) {
+    flex: 3;
+}
+
+.contact-us-container .container> :nth-child(2) {
+    flex: 2;
+}
+
+
+.contact-us-right-content .form-container {
+    background-color: #fff;
+    padding: 1rem;
+    border-radius: .3rem;
+    box-shadow: 3px 10px 30px rgb(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+
+
+
+.contact-us-right-content .form-container label {
+    display: block;
+    margin: .3rem 0;
+}
+
+.contact-us-right-content .form-container> :nth-child(1) {
+    display: flex;
+    gap: 1rem;
+}
+
+.contact-us-right-content .form-container> :nth-child(1)>div {
+    flex: 1;
+}
+
+.form-container input,
+.form-container textarea {
+    width: 100%;
+    padding: .2rem 1rem;
+    outline: none;
+}
+
+.contact-us-right-content textarea {
+    resize: none;
+}
+
+
+
+.address-container .map-container iframe {
+    width: 100%;
+    height: 60vh;
+}
+
+.address-container .other-details-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+    gap: 1rem;
+}
+
+.address-container .other-details-container > div{
+    display: flex;
+    background-color: #ffffff;
+    padding: .5rem 1rem;
+    gap: 1rem;
+    border-radius: .2rem;
+    box-shadow: 3px 10px 20px rgba(0, 0, 0, 0.2);
+}
+.address-container .other-details-container > div i{
+    margin-top: 1rem;
+}
+
+.address-container .other-details-container > div> :nth-child(2){
+    display: flex;
+    flex-direction: column;
+}
+.address-container .other-details-container > div> :nth-child(2)> :nth-child(1){
+    font-size: 20px;
+    font-weight: 600;
+}
+
+
+@media only screen and (max-width:1200px) {
+    .contact-us-right-content .form-container>:nth-child(1) {
+        flex-direction: column;
+    }
+
+    .contact-us-right-content .form-container {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width:1000px) {
+    .contact-us-container .container {
+        flex-direction: column;
+    }
+
+    .contact-us-container .container .contact-us-left-content>* {
+        width: 100% !important;
+    }
+
+    .contact-us-right-content .form-container> :nth-child(1) {
+        flex-direction: row;
+    }
+}
+
+@media only screen and (max-width:480px) {
+    .contact-us-right-content .form-container> :nth-child(1) {
+        flex-direction: column;
+    }
+
+    .address-container .other-details-container{
+        display: flex;
+        flex-direction: column;
+    }
+}

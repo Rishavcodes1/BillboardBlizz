@@ -1,0 +1,81 @@
+.divider {
+    border: 1px solid black;
+}
+
+.admin-add-store-form-container .owner-details-container {
+    display: flex;
+    gap: 1rem;
+    margin: 1rem 0;
+}
+.admin-add-store-form-container .owner-details-container>div {
+    flex: 1;
+}
+
+.admin-add-store-form-container .store-other-details-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+}
+
+.store-other-details-container .address-container {
+    grid-column: 3 / span 1;
+    grid-row: 1 / span 2;
+    display: flex;
+    flex-direction: column;
+}
+.store-other-details-container .address-container textarea{
+    height: 100%;
+}
+
+.store-other-details-container .gst-container {
+    grid-column: 1/ span 2;
+}
+
+
+
+@media only screen and (max-width:850px) {
+    .admin-add-store-form-container .store-other-details-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .store-other-details-container .address-container {
+        grid-column: 2 / span 1;
+        grid-row: 1 / span 2;
+    }
+
+    .store-other-details-container .gst-container {
+        grid-column: 1;
+    }
+
+    .store-other-details-container .store-establishment-container {
+        grid-row: 7;
+    }
+
+}
+
+@media only screen and (max-width:680px) {
+    .admin-add-store-form-container .owner-details-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .admin-add-store-form-container .owner-details-container> :nth-child(1) {
+        grid-column: 1/span 2;
+    }
+}
+
+@media only screen and (max-width:480px) {
+    .admin-add-store-form-container .owner-details-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .admin-add-store-form-container .store-other-details-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .store-other-details-container .address-container {
+        height: 20vh;
+    }
+}

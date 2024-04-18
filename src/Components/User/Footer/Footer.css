@@ -1,0 +1,120 @@
+.footer-container {
+    background: linear-gradient(to right, rgb(72, 72, 72), rgb(39, 37, 37));
+    color: #fff;
+}
+
+.footer-subscribe-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.footer-subscribe-container > h3 {
+    display: none;
+}
+
+.footer-subscribe-container>span {
+    font-size: 18px;
+    color: #eeeded;
+    margin-bottom: 1rem;
+}
+
+.footer-subscribe-container > div {
+    display: flex;
+    gap: 1rem;
+}
+
+.footer-subscribe-container input {
+    padding: .3rem 1rem;
+    outline: none;
+    border: none;
+    border-radius: 2px;
+    width: 25%;
+    min-width: 300px;
+}
+
+.footer-container .footer-links-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.footer-links-container> :nth-child(2) {
+    display: flex;
+    gap: 1rem;
+}
+
+.footer-links-container> :nth-child(2) span:hover {
+    color: rgb(227, 227, 227);
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+.footer-social-media-links-container> :nth-child(2)>div {
+    border-radius: 50%;
+    border: 2px solid;
+    border-color: #bcbcbc;
+    height: 40px;
+    width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    color: #bcbcbc;
+}
+
+.footer-social-media-links-container> :nth-child(2)>div:hover {
+    border-color: #fff;
+    color: #fff;
+}
+
+.footer-social-media-links-container> :nth-child(2) {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.footer-container hr {
+    border: 2px solid #fff;
+}
+
+@media only screen and (max-width:1350px) {
+    .footer-subscribe-container > h3{
+        display: flex;
+    }
+    .footer-links-container> h3{
+        display: none;
+    }
+    
+}
+@media only screen and (max-width:1050px) {
+    .footer-links-container{
+        padding: 1rem 0;
+    }
+    .footer-links-container> :nth-child(2){
+        display: grid;
+        width: 50%;
+        grid-template-columns: repeat(auto-fit, minmax(120px,1fr));
+    }
+    .footer-social-media-links-container{
+        display: flex;
+        flex-direction: column;
+        margin-bottom: auto;
+    }
+    
+}
+@media only screen and (max-width:470px) {
+    .footer-subscribe-container > div{
+        flex-direction: column;
+    }
+    .footer-subscribe-container > div > input{
+        text-align: center;
+    }
+
+    .footer-social-media-links-container > :nth-child(2){
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(40px, 1fr));
+    }
+    
+    
+}
