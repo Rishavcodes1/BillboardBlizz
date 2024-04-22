@@ -8,7 +8,7 @@ import "./Components/Panels/Common/Panel.css";
 import { store } from "./Components/StateMangement/Store";
 import { Provider } from "react-redux";
 
-const root = ReactDOM.createRoot(document.getElementById("root"));
+const root = ReactDOM.createRoot(document.getElementById("id"));
 root.render(
   <React.StrictMode>
     <Provider store={store}>
